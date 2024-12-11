@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "rolesmp",
+	"version": "${version}",
+	"name": "Role SMP Mod",
+	"description": "A Minecraft mod for Role SMP owned by TheGreenBird",
+	"authors": [
+		"TheGreenBird"
+	],
+	"contact": {
+		"homepage": "https://thegreenfeather.github.io/",
+		"sources": "https://github.com/TheGreenFeather/Fabric-Role-SMP-MOD-1.21.4"
+	},
+	"license": "MIT",
+	"icon": "assets/rolesmp/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.thegreenfeather.rolesmp.RoleSMPMod"
+		],
+		"fabric-datagen": [
+			"io.github.thegreenfeather.rolesmp.RoleSMPModDataGenerator"
+		],
+		"client": [
+			"io.github.thegreenfeather.rolesmp.RoleSMPModClient"
+		]
+	},
+	"mixins": [
+		"rolesmp.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
