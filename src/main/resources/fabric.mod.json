@@ -3,9 +3,9 @@
 	"id": "rolesmp",
 	"version": "${version}",
 	"name": "Role SMP Mod",
-	"description": "A Minecraft mod for Role SMP owned by TheGreenBird",
+	"description": "A Minecraft mod for Role SMP owned by TheGreenFeather",
 	"authors": [
-		"TheGreenBird"
+		"TheGreenFeather"
 	],
 	"contact": {
 		"homepage": "https://thegreenfeather.github.io/",
