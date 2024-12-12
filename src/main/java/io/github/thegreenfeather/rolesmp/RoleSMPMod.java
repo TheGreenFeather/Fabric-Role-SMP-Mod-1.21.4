@@ -5,6 +5,8 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import io.github.thegreenfeather.rolesmp.item.ModItems;
+
 public class RoleSMPMod implements ModInitializer {
 	
 	public static final String MOD_ID = "rolesmp";
@@ -12,7 +14,7 @@ public class RoleSMPMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-		// LOGGER.info("Hello Fabric world!");
+		
+		ModItems.registerModItems();
 	}
 }
