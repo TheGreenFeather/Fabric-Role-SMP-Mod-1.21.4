@@ -12,10 +12,10 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     
-    public static final Item DYNAMITE = registerItem("dynamite", new Item(new Item.Settings()));
+    public static final Item DYNAMITE = registerItem("dynamite", new Item.Settings());
 
-    private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, RegistryKey.of(RegistryKeys.ITEM, Identifier.of(RoleSMPMod.MOD_ID, name)), item);
+    private static Item registerItem(String name, Item.Settings settings) {
+        return Registry.register(Registries.ITEM, Identifier.of(RoleSMPMod.MOD_ID, name), new Item(settings.registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(RoleSMPMod.MOD_ID, name)))));
     }
 
     public static void registerModItems() {
