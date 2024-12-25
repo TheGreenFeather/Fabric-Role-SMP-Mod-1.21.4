@@ -20,7 +20,7 @@ public class ModItems {
 
     public static void registerModItems() {
 
-        RoleSMPMod.LOGGER.info("Registering Mod Items for " + RoleSMPMod.MOD_ID);
+        RoleSMPMod.LOGGER.info("Registering Mod Items for " + RoleSMPMod.MOD_NAME);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
             entries.add(DYNAMITE);

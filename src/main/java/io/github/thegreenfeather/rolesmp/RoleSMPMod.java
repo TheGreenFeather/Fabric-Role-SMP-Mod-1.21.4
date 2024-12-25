@@ -10,7 +10,8 @@ import io.github.thegreenfeather.rolesmp.item.ModItems;
 public class RoleSMPMod implements ModInitializer {
 	
 	public static final String MOD_ID = "rolesmp";
-	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+	public static final String MOD_NAME = "Role SMP Mod";
+	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_NAME);
 
 	@Override
 	public void onInitialize() {
